@@ -1,6 +1,6 @@
-// ===========================
-// NAVBAR - change background when scrolling
-// ===========================
+
+// NAVBAR to change background when scrolling
+
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', function() {
@@ -12,9 +12,8 @@ window.addEventListener('scroll', function() {
 });
 
 
-// ===========================
+
 // HAMBURGER MENU - for mobile
-// ===========================
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
@@ -29,10 +28,7 @@ navLinks.querySelectorAll('a').forEach(function(link) {
   });
 });
 
-
-// ===========================
-// CONTACT FORM - basic validation and feedback
-// ===========================
+// CONTACT FORM forbasic validation and feedback
 const sendBtn = document.getElementById('send-btn');
 const formFeedback = document.getElementById('form-feedback');
 
@@ -60,10 +56,7 @@ sendBtn.addEventListener('click', function() {
   document.getElementById('message-input').value = '';
 });
 
-
-// ===========================
 // SCROLL ANIMATION - fade in sections as you scroll
-// ===========================
 const sections = document.querySelectorAll('section');
 
 // set them all invisible to start
