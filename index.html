@@ -6,6 +6,8 @@
   <title>Sharp Cuts Barbershop</title>
   <link rel="stylesheet" href="index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#C9A84C" />
 </head>
 <body>
 
@@ -189,5 +191,18 @@
   </footer>
 
   <script src="index.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(function() {
+          console.log('Service worker registered!');
+        })
+        .catch(function(err) {
+          console.log('Service worker failed:', err);
+        });
+    });
+  }
+</script>
 </body>
 </html>
